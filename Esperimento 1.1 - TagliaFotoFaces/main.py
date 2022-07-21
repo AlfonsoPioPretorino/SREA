@@ -14,7 +14,7 @@ def cropandsave(img, save_path, img_name):
     try:
         cv2.imwrite(save_path +"\\"+img_name, faces)
     except:
-        err_img = cv2.imread("C:\\Users\\Alfonso\\Desktop\\Python\\rip.jpg")
+        err_img = cv2.imread("C:\\Users\\Alfonso\\Desktop\\Python\\err.jpg")
         cv2.imwrite(save_path +"\\"+img_name, err_img)
 
 def createFolder(dest_path, newFolder):
