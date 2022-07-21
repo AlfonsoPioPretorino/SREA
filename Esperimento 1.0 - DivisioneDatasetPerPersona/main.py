@@ -62,7 +62,7 @@ for filepath in glob.glob(origin_path):
                             writer.writerow([emotions[indexEmotion]+'/'+filename]+[indexEmotion])
                         break
                 elif folder == "val":
-                    if val[indexEmotion] < 23:
+                    if val[indexEmotion] < 22:
                         dst_path = dest_path+"/val/"+emotions[indexEmotion]
                         shutil.move(filepath, dst_path)
                         val[indexEmotion] += 1
@@ -71,7 +71,7 @@ for filepath in glob.glob(origin_path):
                             writer.writerow([emotions[indexEmotion]+'/'+filename]+[indexEmotion])
                         break
                 elif folder == "test":
-                    if test[indexEmotion] < 11:
+                    if test[indexEmotion] < 12:
                         dst_path = dest_path+"/test/"+emotions[indexEmotion]
                         shutil.move(filepath, dst_path)
                         test[indexEmotion] += 1
